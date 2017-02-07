@@ -80,7 +80,7 @@ esac
 # Alias definitions.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then`
+if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
@@ -111,4 +111,5 @@ fi
 
 # Make ^s and ^q not affect terminal session
 stty -ixon
+
 
