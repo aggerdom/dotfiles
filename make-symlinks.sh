@@ -14,7 +14,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc bash_aliases bash_functions vimrc"    # list of files/folders to symlink in homedir
+files="bashrc bash_aliases bash_functions vimrc config/i3/config env"    # list of files/folders to symlink in homedir
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."

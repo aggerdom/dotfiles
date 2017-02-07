@@ -72,12 +72,15 @@ xterm*|rxvt*)
     ;;
 esac
 
+# =============================================== #
+# MY CHANGES TO DEFAULT SETTINGS START HERE       # 
+# =============================================== #
 
 
 # Alias definitions.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
+if [ -f ~/.bash_aliases ]; then`
     . ~/.bash_aliases
 fi
 
@@ -85,6 +88,12 @@ fi
 
 if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
+fi
+
+# Additions to path, shopt options, ect. 
+
+if [ -f ~/.env ]; then
+    . ~/.env
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -99,21 +108,7 @@ if ! shopt -oq posix; then
 fi
 
 
-# added by Anaconda3 4.2.0 installer
-export PATH="/home/alex/anaconda3/bin:$PATH"
-
-# Pycharm
-export PATH="/home/alex/alexs-installers/pycharm-2016.3.2/bin:$PATH"
-
-# /home/alex/alexs-installers/pycharm-2016.3.2/bin
-# CUDA Library support
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64"
-export CUDA_HOME=/usr/local/cuda-8.0/
-export LD_LIBRARY_PATH=/home/alex/code/deps:/home/alex/code/deps/cuda:$LD_LIBRARY_PATH
-
-export MYVIMRC="~/.vimrc"
 
 # Make ^s and ^q not affect terminal session
 stty -ixon
-
 
