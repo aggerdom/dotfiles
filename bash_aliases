@@ -36,3 +36,20 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias list-sym-links="ls -l $(find ./ -maxdepth 1 -type l -print)"
 
+alias date2day='date +%D'
+alias time2day='date +%H:%M:%S'
+alias diarytime='echo $(date2day) $(time2day)'
+
+# Clipboard settings
+
+alias clip='xclip -sel "clipboard" -i'
+alias clipo='xclip -sel "clipboard" -o'
+alias clipf='xclip -sel "clipboard" -i -f'
+
+alias clip-1='xclip -sel "primary" -i'
+alias clipo-1='xclip -sel "primary" -o'
+alias clipf-1='xclip -sel "primary" -i -f'
+
+alias clip-2='xclip -sel "secondary" -i'
+alias clipo-2='xclip -sel "secondary" -o'
+alias clipf-2='xclip -sel "secondary" -i -f'
