@@ -17,3 +17,9 @@ sudo apt-get install thunar
 # enable ark-darker theme in lxappearance
 # Install moka icon pack: https://snwh.org/moka
 
+# Replaces dmenu (dropdown bar on top of screen, accessed with ^d)
+sudo apt-get install rofi
+
+# Install compton: a compositor allow transparency of window
+sudo apt-get install compton
+sudo apt-get install i3blocks
