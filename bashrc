@@ -119,3 +119,4 @@ fi
 stty -ixon
 
 
+alias config='/usr/bin/git --git-dir=/home/alex/.cfg/ --work-tree=/home/alex'
