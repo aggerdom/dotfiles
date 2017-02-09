@@ -53,3 +53,8 @@ alias clipf-1='xclip -sel "primary" -i -f'
 alias clip-2='xclip -sel "secondary" -i'
 alias clipo-2='xclip -sel "secondary" -o'
 alias clipf-2='xclip -sel "secondary" -i -f'
+
+alias click2kill="xkill"
+alias config-infanality="sudo bash /etc/fonts/infinaty/infctl.sh setstyle"
+
+
